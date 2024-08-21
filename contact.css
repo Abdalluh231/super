@@ -1,0 +1,155 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: linear-gradient(to right, #333, #555);
+    color: #fff;
+    padding: 10px 5%;
+    text-align: center;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+    margin: auto;
+}
+
+header .logo {
+    height: 70px; /* Smaller by default */
+}
+
+header h1 {
+    margin: 0;
+    font-weight: 700;
+    font-size: 2em;
+    color: #f39c12;
+    letter-spacing: 2px;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header nav ul li {
+    margin-left: 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1em;
+    transition: color 0.3s, transform 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #f39c12;
+    transform: scale(1.05);
+}
+
+.contact-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('contact.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 80px 10%;
+    text-align: center;
+    position: relative;
+}
+
+.contact-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+.contact-section p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    max-width: 90%;
+    margin: auto;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.contact-section .form-wrapper {
+    max-width: 100%;
+    margin: auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    padding: 15px 5%;
+    text-align: center;
+    font-size: 1em;
+}
+
+footer p {
+    margin: 0;
+}
+
+.container {
+    max-width: 100%;
+    margin: auto;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .contact-section h2 {
+        font-size: 2em;
+    }
+
+    .contact-section p {
+        font-size: 1em;
+    }
+
+    .contact-section {
+        padding: 60px 5%;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    header .logo {
+        height: 50px;
+    }
+
+    .contact-section h2 {
+        font-size: 1.8em;
+    }
+
+    .contact-section p {
+        font-size: 0.9em;
+    }
+}

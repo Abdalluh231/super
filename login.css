@@ -1,0 +1,187 @@
+body {
+    font-family: 'Poppins', sans-serif; /* Updated to a more modern font */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('3d3.jpg'); /* Background photo */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Ensures a parallax effect */
+    color: #fff;
+}
+
+header {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+
+header .logo {
+    width: 50px; /* Enhanced size for impact */
+    height: auto;
+    margin-right: 10px;
+}
+
+header h1 {
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Added text shadow */
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 25px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1em;
+    transition: color 0.3s, transform 0.3s;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Added subtle shadow */
+}
+
+header nav ul li a:hover {
+    color: #f39c12;
+    transform: scale(1.1);
+}
+
+.login-container {
+    background: rgba(0, 0, 0, 0.6); /* Darkened glass effect */
+    padding: 30px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 400px; /* Increased max width */
+    text-align: center;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5); /* Enhanced shadow */
+    backdrop-filter: blur(10px); /* Glassmorphism effect */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Border to enhance glass look */
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #f39c12;
+    font-size: 2em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1em;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    transition: background-color 0.3s;
+}
+
+input[type="text"]::placeholder,
+input[type="password"]::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    background-color: rgba(255, 255, 255, 0.2);
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    background: linear-gradient(to right, #f39c12, #e74c3c);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background: linear-gradient(to right, #e74c3c, #f39c12);
+    transform: translateY(-3px);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 20px;
+    }
+
+    header .logo {
+        width: 40px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header nav ul li {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .login-container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        font-size: 0.9em;
+    }
+
+    button {
+        font-size: 1em;
+    }
+}
