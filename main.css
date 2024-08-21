@@ -443,28 +443,10 @@ footer .social-icon img {
         align-items: center;
     }
 
-  .about-image {
-    width: 100%;
-    max-width: 150px; /* Set a smaller max-width for a better fit */
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
     .about-image {
-        max-width: 100px; /* Smaller size for tablet screens */
+        max-width: 100%;
     }
 }
-
-@media (max-width: 480px) {
-    .about-image {
-        max-width: 80px; /* Smaller size for mobile screens */
-    }
-}
-
 
 @media (max-width: 480px) {
     header h1 {
@@ -500,4 +482,4 @@ footer .social-icon img {
     .trusted-brands h2 {
         font-size: 1.8em
     }
-}
+})
