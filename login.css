@@ -6,7 +6,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-image: url('3d3.jpg'); /* Background photo */
+    background-image: url('login.jpg'); /* Background photo */
     background-size: cover;
     background-position: center;
     background-attachment: fixed; /* Ensures a parallax effect */
@@ -185,3 +185,4 @@ button:hover {
         font-size: 1em;
     }
 }
+
